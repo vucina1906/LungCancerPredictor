@@ -1,0 +1,10 @@
+numpy
+matplotlib
+Flask
+imgaug
+requests
+tensorflow
+Keras
+scikeras
+opencv-python
+#-e .
