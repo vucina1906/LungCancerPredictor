@@ -52,22 +52,5 @@ def display_image(filename):
         #print("display_image filename: " + filename) 
     return redirect(url_for('static',filename='uploads/' + filename), code=301) 
         
-        
-        
-        
-    #file = request.files['file'] # in the html form we sad name="filename" so image is uploaded under the imagename
-    #image_path = "static/uploads/" + file.filename
-    #file.save(image_path)
-    
-    #image = image_path
-    #model = load_object("Artifacts", "effnetb4_50epochs.h5")
-    #predicted_class = predict_single_image(image, model)
-    
-    
-    
-    #return render_template('home.html', filename=filename) # we will return result on page so on html page we add if prediction paragraf in Jinja 2 tempalte language that Flask recognizes {% if %}
-
-
-
 if __name__=='__main__':
     app.run(port=3000, debug=True)
